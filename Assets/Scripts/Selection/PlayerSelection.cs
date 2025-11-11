@@ -17,7 +17,7 @@ public class PlayerSelection : MonoBehaviour
     private int posistion = 1;
     private float lastMoveTime;
     private PlayerInput playerInput;
-    
+
     private void Awake()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -38,22 +38,21 @@ public class PlayerSelection : MonoBehaviour
     {
         float move = value.Get<float>();
 
-        if (Mathf.Abs(move) > 0.5f && Time.time - lastMoveTime > moveCooldown)
-        {
-            posistion += move > 0 ? 1 : -1;
-            posistion = Mathf.Clamp(posistion, 0, SelectionCells.Length - 1);
+        if (Time.time - lastMoveTime > moveCooldown) return;
 
-            Selector.transform.SetParent(SelectionCells[posistion].transform);
-            Selector.transform.localPosition = Vector3.zero;
+        posistion += move > 0 ? 1 : -1;
+        posistion = Mathf.Clamp(posistion, 0, SelectionCells.Length - 1);
 
-            Character selectedCharacter = Character.None;
-            if (posistion == 0) selectedCharacter = Character.Grandpa;
-            else if (posistion == 2) selectedCharacter = Character.Grandchild;
+        Selector.transform.SetParent(SelectionCells[posistion].transform);
+        Selector.transform.localPosition = Vector3.zero;
 
-            onSelectedCharacterChange.Invoke(playerInput.playerIndex, selectedCharacter);
+        Character selectedCharacter = Character.None;
+        if (posistion == 0) selectedCharacter = Character.Grandpa;
+        else if (posistion == 2) selectedCharacter = Character.Grandchild;
 
-            lastMoveTime = Time.time; 
-        }
+        onSelectedCharacterChange.Invoke(playerInput.playerIndex, selectedCharacter);
+
+        lastMoveTime = Time.time;
     }
 
     public void OnStartGame()
