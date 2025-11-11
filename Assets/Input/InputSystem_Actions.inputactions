@@ -519,7 +519,7 @@
             ]
         },
         {
-            "name": "Grandpa",
+            "name": "Player",
             "id": "740a40e7-1e86-4857-bd66-f6ce97f5b7d7",
             "actions": [
                 {
@@ -633,22 +633,31 @@
             ]
         },
         {
-            "name": "Grandchild",
-            "id": "58f50440-cae3-4051-965e-137ca6981cb2",
+            "name": "Selection",
+            "id": "40e196b3-d09c-4bba-9cd7-1e0c88bd47df",
             "actions": [
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "ddda0317-4685-4719-b2da-f53dc434d401",
+                    "id": "f17b6236-c898-46e7-b0ef-f1bf13109563",
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Action",
+                    "name": "Disconnect",
                     "type": "Button",
-                    "id": "22c0ea48-c21a-4551-bf96-c7ab4c1966e1",
+                    "id": "341c8d6a-66f3-4239-918c-c3e7e6d2b46b",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "StartGame",
+                    "type": "Button",
+                    "id": "d3341f9f-d1dd-4760-99c2-750732880163",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -657,8 +666,8 @@
             ],
             "bindings": [
                 {
-                    "name": "Keyboard",
-                    "id": "6711281f-8d41-4cc9-9a60-0b289bcb3b3b",
+                    "name": "Arrows",
+                    "id": "ba7a7ac5-0dc3-4c6e-bff0-636624405464",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -669,7 +678,7 @@
                 },
                 {
                     "name": "negative",
-                    "id": "24da116e-e9f1-45a9-87b1-9c82554b22ab",
+                    "id": "93265890-5b2f-4059-9291-9741e3fef562",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -680,7 +689,7 @@
                 },
                 {
                     "name": "positive",
-                    "id": "8982ad61-c54c-4bb7-a765-9a6cbc9af926",
+                    "id": "3833cc12-82d4-4db0-ad4f-6e49dab423c7",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -690,8 +699,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Joystick",
-                    "id": "7a7918e7-a6b3-4009-a642-70c70a33d53a",
+                    "name": "Dpad",
+                    "id": "6d0e3768-0e1c-42ac-ba54-291683b77c9d",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -702,8 +711,8 @@
                 },
                 {
                     "name": "negative",
-                    "id": "035d7273-99d4-4157-8b7b-b76a54178f70",
-                    "path": "<Joystick>/stick/left",
+                    "id": "e805f7c0-e100-4438-b242-1d1d7dbde82c",
+                    "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -713,8 +722,41 @@
                 },
                 {
                     "name": "positive",
-                    "id": "aa9c0832-016d-4a6e-8021-062417968817",
-                    "path": "<Joystick>/stick/right",
+                    "id": "8063258d-da14-4eb3-9da0-f698bfad1448",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "AD",
+                    "id": "b2c4be2c-808f-4aeb-88ac-d874bf04fb59",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "bbf3a99c-7d4c-4108-b614-2880f52db6e0",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "b897de69-29c1-4b08-956d-b67ad63676ee",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -724,23 +766,45 @@
                 },
                 {
                     "name": "",
-                    "id": "edc364f0-b5bf-4f51-b665-28c6d7161f39",
-                    "path": "<Keyboard>/m",
+                    "id": "c75a1e1e-b481-4d0a-bee7-61a6ac8878d8",
+                    "path": "<Keyboard>/backspace",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Action",
+                    "action": "Disconnect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "246fddc7-1f3b-41c2-ad55-3a562289a902",
+                    "id": "fe8f1602-1a60-4024-8560-f7677b99a2e2",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Disconnect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3e7f5295-6cb0-4487-968c-4a689f4e48b2",
+                    "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StartGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "657d6b4f-f54b-4980-8c9a-f8b916df00b4",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Action",
+                    "action": "StartGame",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

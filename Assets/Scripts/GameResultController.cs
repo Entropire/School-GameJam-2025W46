@@ -4,9 +4,9 @@ using UnityEngine.Events;
 
 public class GameResultController : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<Players> onPlayerWin;
+    [SerializeField] private UnityEvent<Character> onPlayerWin;
 
-    public void HandleCollisionWithTarget() => onPlayerWin.Invoke(Players.Child);
+    public void HandleCollisionWithTarget() => onPlayerWin.Invoke(Character.Grandchild);
 
-    public void HandleTimerDone() => onPlayerWin.Invoke(Players.Grandpa);
+    public void HandleTimerDone() => onPlayerWin.Invoke(Character.Grandpa);
 }

@@ -1,8 +1,9 @@
 ﻿namespace Assets.Scripts
 {
-    public enum Players
+    public enum Character
     {
-        Child,
+        None,
+        Grandchild,
         Grandpa
     }
 }
