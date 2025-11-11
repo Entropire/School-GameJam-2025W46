@@ -401,7 +401,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1844873656}
   - component: {fileID: 1844873655}
+  - component: {fileID: 1844873658}
   - component: {fileID: 1844873657}
+  - component: {fileID: 1844873659}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -491,10 +493,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 1844873654}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74fa967e3adeb642ad72ba1688d5c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerDash
+  dashSpeed: 20
+  dashlenght: 0.5
+  dashCooldown: 1
+--- !u!114 &1844873658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844873654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 686bdbed6b9f49d408607b24f5348948, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Movement
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveSpeed: 5
+  activeMoveSpeed: 0
+--- !u!114 &1844873659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844873654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: ee2bdcfe9a50a90428559377fb5e8a28, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &2026188113
 GameObject:
   m_ObjectHideFlags: 0
