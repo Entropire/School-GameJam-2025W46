@@ -149,7 +149,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   CarPrefabs:
-  - {fileID: 658185986820875851, guid: 3fe5021654a446544a16ff133de386e4, type: 3}
+  - {fileID: 2046772091369857472, guid: 3c1e66484b841bd4f8fb6acbae00f08f, type: 3}
+  - {fileID: 7313245432370271227, guid: dd3b6b1fc6fb51540aa1635a7a5f004c, type: 3}
+  - {fileID: 8101488498162131943, guid: 988162276ed1e4648ac5fd455abceaf7, type: 3}
+  - {fileID: 488766618837628773, guid: 39f0cca8a7b218b41909d646d717e936, type: 3}
+  - {fileID: 4115678649563533723, guid: 334b9ad5b7011634a985bece3ce08df1, type: 3}
   AbilityCooldown: 1
 --- !u!50 &1017424736758059686
 Rigidbody2D:

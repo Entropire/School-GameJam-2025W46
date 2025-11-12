@@ -1,10 +1,13 @@
 ﻿using Assets.Scripts;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameResultController : MonoBehaviour
 {
+    private void Start()
+    {
+        CarCollisionTrigger.onCollisionWithTarget += HandleCollisionWithTarget;
+    }
 
     public void HandleCollisionWithTarget()
     {

@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grandpa
       objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: b76dab008fac12a429625771387de738, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: b76dab008fac12a429625771387de738, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: b76dab008fac12a429625771387de738, type: 3}
       propertyPath: m_SortingOrder
       value: -1
