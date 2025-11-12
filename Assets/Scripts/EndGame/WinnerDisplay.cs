@@ -9,7 +9,6 @@ namespace Assets.Scripts.EndGame
 
         private void Start()
         {
-            text = GetComponent<TMP_Text>();
             text.text = $"Player {EndGameResult.winner} has won the game!";
         }
     }

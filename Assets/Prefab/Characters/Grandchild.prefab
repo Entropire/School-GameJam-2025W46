@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grandchild
       objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 63bde254610268f4795dcc406cd60d2a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63bde254610268f4795dcc406cd60d2a, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -30,7 +34,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63bde254610268f4795dcc406cd60d2a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 63bde254610268f4795dcc406cd60d2a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -127,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 686bdbed6b9f49d408607b24f5348948, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  Boundary: 4
+  Boundary: 3
   moveSpeed: 5
 --- !u!114 &8703635048140265957
 MonoBehaviour:
@@ -211,9 +215,9 @@ BoxCollider2D:
   m_Offset: {x: -0.015000001, y: 0.17000002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.6666667, y: -0.15384616}
-    oldSize: {x: 0.09, y: 0.26}
-    newSize: {x: 0.09, y: 0.26}
+    pivot: {x: 0.6363636, y: -0.107142866}
+    oldSize: {x: 0.11, y: 0.28}
+    newSize: {x: 0.11, y: 0.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
