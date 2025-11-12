@@ -38,7 +38,7 @@ public class PlayerSelection : MonoBehaviour
     {
         float move = value.Get<float>();
 
-        if (Time.time - lastMoveTime > moveCooldown) return;
+        if (Time.time - lastMoveTime < moveCooldown) return;
 
         posistion += move > 0 ? 1 : -1;
         posistion = Mathf.Clamp(posistion, 0, SelectionCells.Length - 1);
