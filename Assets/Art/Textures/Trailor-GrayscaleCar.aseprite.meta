@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b669633513e4a644c9739e6d88550d58
+guid: cfb59301c2b35934b92b4b0db28a1546
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,7 +127,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: redCarL
+  - name: Trailor-GrayscaleCar
     originalName: 
     pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
@@ -139,7 +139,7 @@ ScriptedImporter:
       y: 4
       width: 48
       height: 90
-    spriteID: 2272d05a138f6b5469e174228401d85e
+    spriteID: 4578898b8d807544898fc5d1bf974d1c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,17 +153,17 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 1017994003
+      value0: 3220222731
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: redCarL
+    name: Trailor-GrayscaleCar
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: redCarL
+    - name: Trailor-GrayscaleCar
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -171,7 +171,7 @@ ScriptedImporter:
         y: 3
         width: 48
         height: 90
-      spriteId: 2272d05a138f6b5469e174228401d85e
+      spriteId: 4578898b8d807544898fc5d1bf974d1c
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
