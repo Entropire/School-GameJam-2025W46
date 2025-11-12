@@ -1,34 +1,32 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private float moveInput;
 
-    public float activeMoveSpeed;
+    private Rigidbody2D rb;
 
-    
+
     void Start()
     {
-        activeMoveSpeed = moveSpeed;
+        rb = GetComponent<Rigidbody2D>();
 
     }
 
-    private void Update()
-    { 
-        Vector3 move = new Vector3(moveInput * activeMoveSpeed * Time.deltaTime, 0, 0);
-        transform.position += move;
+    private void FixedUpdate()
+    {
+        if (rb.linearVelocity.x > moveSpeed || rb.linearVelocity.x < -moveSpeed) return;
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8f, 8f), transform.position.y, transform.position.z);///voorkomt niet buiten scherm
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, 0f);
 
     }
 
 
     public void OnMove(InputValue value)
     {
-        Vector2 input = value.Get<Vector2>();
-        moveInput = input.x;
-        Debug.Log("Move Input: " + moveInput);
+        moveInput = value.Get<float>();
     }
 }
