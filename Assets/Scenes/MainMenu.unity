@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grampa
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: b76dab008fac12a429625771387de738, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: b76dab008fac12a429625771387de738, type: 3}
       propertyPath: m_SortingOrder
       value: 3
