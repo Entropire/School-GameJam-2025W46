@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4020d1d72d674f648af72a953f584e69
+guid: 7b0aa919d762bfb42a4b4ef9ed98a9b5
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -127,9 +127,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: redDefaultCar
+  - name: Boss-GrayscaleCar
     originalName: 
-    pivot: {x: 0.5, y: -0.11538462}
+    pivot: {x: 0.5, y: -0.021978024}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -137,9 +137,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 26
-    spriteID: cfba590d2f9fde14083b3f594282e7e5
+      width: 80
+      height: 91
+    spriteID: ef6a7fb7620438946a11f5c43de265be
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -153,25 +153,25 @@ ScriptedImporter:
   asepriteLayers:
   - layerIndex: 0
     uuid:
-      value0: 2278567348
+      value0: 3968560089
       value1: 0
       value2: 0
       value3: 0
     guid: 0
-    name: redDefaultCar
+    name: Boss-GrayscaleCar
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: redDefaultCar
+    - name: Boss-GrayscaleCar
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 8
-        y: 3
-        width: 16
-        height: 26
-      spriteId: cfba590d2f9fde14083b3f594282e7e5
+        y: 2
+        width: 80
+        height: 91
+      spriteId: ef6a7fb7620438946a11f5c43de265be
     linkedCells: []
     tileCells: []
     tileSetIndex: 0
@@ -181,5 +181,5 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 32, y: 32}
-  previousTextureSize: {x: 32, y: 64}
+  canvasSize: {x: 96, y: 96}
+  previousTextureSize: {x: 128, y: 128}
