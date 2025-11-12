@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
-
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] float Boundary = 3f;
     public float moveSpeed = 5f;
     private float moveInput;
 
@@ -13,15 +12,17 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
     }
 
     private void FixedUpdate()
     {
+        transform.position = new Vector2(
+            Mathf.Clamp(transform.position.x, -Boundary, Boundary), 
+            transform.position.y);
+
         if (rb.linearVelocity.x > moveSpeed || rb.linearVelocity.x < -moveSpeed) return;
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, 0f);
-
     }
 
 

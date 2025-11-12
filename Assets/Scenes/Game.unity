@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11ca003ccb93d2440a452db02f8319a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameInitializer
-  GrandpaPrefab: {fileID: 3288413086212579408, guid: 6e77c15cfdbfa564490b3947969e8dc0, type: 3}
-  GrandchildPrefab: {fileID: 3898974128603994333, guid: 1fb2e6806e831ea41a3e467b6a2b7f0e, type: 3}
-  SpawnPointGrandpa: {fileID: 1354486361}
+  GrandpaPrefab: {fileID: 535050230013175571, guid: ce6b5d8a8ec4e41418b462d900641e02, type: 3}
+  GrandchildPrefab: {fileID: 54734447579329555, guid: 82ff976f8cce2d346869b19ce54e4c39, type: 3}
+  SpawnPointGrandpa: {fileID: 756916822181842806, guid: ce6b5d8a8ec4e41418b462d900641e02, type: 3}
   SpawnPointGrandchild: {fileID: 846723840}
 --- !u!1 &846723839
 GameObject:

@@ -6,7 +6,13 @@ public class GameResultController : MonoBehaviour
 {
     [SerializeField] private UnityEvent<Character> onPlayerWin;
 
-    public void HandleCollisionWithTarget() => onPlayerWin.Invoke(Character.Grandchild);
+    public void HandleCollisionWithTarget()
+    {
+        EndGameResult.winner = PlayerSelectionData.selectedCharacters[0] == Character.Grandchild ? 0 : 1;
+    }
 
-    public void HandleTimerDone() => onPlayerWin.Invoke(Character.Grandpa);
+    public void HandleTimerDone()
+    {
+        EndGameResult.winner = PlayerSelectionData.selectedCharacters[0] == Character.Grandpa ? 0 : 1;
+    }
 }
