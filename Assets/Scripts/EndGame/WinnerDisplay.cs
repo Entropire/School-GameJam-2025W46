@@ -9,7 +9,7 @@ namespace Assets.Scripts.EndGame
 
         private void Start()
         {
-            text.text = $"Player {EndGameResult.winner} has won the game!";
+            text.text = $"Player {EndGameResult.winner + 1} has won the game!";
         }
     }
 }

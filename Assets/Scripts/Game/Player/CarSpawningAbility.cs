@@ -20,6 +20,12 @@ public class CarSpawningAbility : MonoBehaviour
         if (Time.time - lastUse < AbilityCooldown) return;
 
         GameObject car = Instantiate(nextcar, transform.position, Quaternion.identity);
+        SpriteRenderer spriteRenderer = car.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new Color(
+            Random.Range(0f, 255f) / 255f, 
+            Random.Range(0f, 255f) / 255f,
+            Random.Range(0f, 255f) / 255f
+            );
         AdjustCarPosition(car);
 
         nextcar = GetRandomCar();
