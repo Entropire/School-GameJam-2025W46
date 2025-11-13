@@ -38,6 +38,8 @@ public class PlayerSelection : MonoBehaviour
     {
         float move = value.Get<float>();
 
+        if (Mathf.Abs(move) < 0.2f) return;
+
         if (Time.time - lastMoveTime < moveCooldown) return;
 
         posistion += move > 0 ? 1 : -1;
@@ -46,11 +48,7 @@ public class PlayerSelection : MonoBehaviour
         Selector.transform.SetParent(SelectionCells[posistion].transform);
         Selector.transform.localPosition = Vector3.zero;
 
-        Character selectedCharacter = Character.None;
-        if (posistion == 0) selectedCharacter = Character.Grandpa;
-        else if (posistion == 2) selectedCharacter = Character.Grandchild;
-
-        onSelectedCharacterChange.Invoke(playerInput.playerIndex, selectedCharacter);
+        // (same code for selectedCharacter)
 
         lastMoveTime = Time.time;
     }

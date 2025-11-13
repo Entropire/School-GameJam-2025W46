@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
             Mathf.Clamp(transform.position.x, -Boundary, Boundary), 
             transform.position.y);
 
+        if (Mathf.Abs(moveInput) < 0.2f) return;
+
         if (rb.linearVelocity.x > moveSpeed || rb.linearVelocity.x < -moveSpeed) return;
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, 0f);
