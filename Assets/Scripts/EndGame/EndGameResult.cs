@@ -1,4 +1,6 @@
+using Assets.Scripts;
+
 public static class EndGameResult
 {
-    public static int winner;
+    public static Character winner;
 }

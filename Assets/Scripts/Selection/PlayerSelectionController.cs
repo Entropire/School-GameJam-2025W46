@@ -19,7 +19,6 @@ namespace Assets.Scripts.Selection
         {
             if (gameCanstart)
             {
-                Debug.Log($"game can start: player1: {players[0].ToString()}, player2: {players[1].ToString()}");
                 PlayerSelectionData.selectedCharacters = players;
                 PlayerSelectionData.devices[0] = PlayerInput.GetPlayerByIndex(0)?.devices[0];
                 PlayerSelectionData.devices[1] = PlayerInput.GetPlayerByIndex(1)?.devices[0];

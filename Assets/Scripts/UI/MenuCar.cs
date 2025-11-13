@@ -6,7 +6,6 @@ public class MenuCar : MonoBehaviour
 {
     [SerializeField]private List<GameObject> carModels;
     [SerializeField]private Transform initialPosition;
-    private float x = 0f;
     private float Timer = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

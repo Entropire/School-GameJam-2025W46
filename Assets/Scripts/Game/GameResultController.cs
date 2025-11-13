@@ -11,13 +11,13 @@ public class GameResultController : MonoBehaviour
 
     public void HandleCollisionWithTarget()
     {
-        EndGameResult.winner = PlayerSelectionData.selectedCharacters[0] == Character.Grandchild ? 0 : 1;
+        EndGameResult.winner = Character.Grandchild;
         SceneManager.LoadScene("End");
     }
 
     public void HandleTimerDone()
     {
-        EndGameResult.winner = PlayerSelectionData.selectedCharacters[0] == Character.Grandpa ? 0 : 1;
+        EndGameResult.winner = Character.Grandpa;
         SceneManager.LoadScene("End");
     }
 }

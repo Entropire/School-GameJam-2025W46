@@ -48,7 +48,11 @@ public class PlayerSelection : MonoBehaviour
         Selector.transform.SetParent(SelectionCells[posistion].transform);
         Selector.transform.localPosition = Vector3.zero;
 
-        // (same code for selectedCharacter)
+        Character selectedCharacter = Character.None;
+        if (posistion == 0) selectedCharacter = Character.Grandpa;
+        else if (posistion == 2) selectedCharacter = Character.Grandchild;
+
+        onSelectedCharacterChange.Invoke(playerInput.playerIndex, selectedCharacter);
 
         lastMoveTime = Time.time;
     }
